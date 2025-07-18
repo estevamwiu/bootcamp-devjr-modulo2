@@ -26,7 +26,7 @@
 
         .header
         {
-            padding: 15px; /* margem interna */
+            padding: 2.5rem; /* margem interna */
         }
 
         .flex-container
@@ -38,24 +38,24 @@
         .header-title 
         {
             color: #006F6F;
-            font-size: 32px; /* tamanho da fonte do título */
+            font-size: 2rem; /* tamanho da fonte do título */
             font-weight: 700; /* negrito */
-            margin-bottom: 20px; /* margem inferior do título */
+            margin-bottom: 1.2rem; /* margem inferior do título */
         }
 
         .header-subtitle 
         {
             color: #009E9E;
-            font-size: 18px; /* tamanho da fonte do subtítulo */
+            font-size: 1.2rem; /* tamanho da fonte do subtítulo */
             font-weight: 500; /* seminegrito */
-            margin-bottom: 20px; /* margem inferior do subtítulo */
+            margin-bottom: 0.9rem; /* margem inferior do subtítulo */
         }
 
         .col-1
         {
             background-color: #006A6A;
             width: 50%;
-            padding: 20px; /* margem interna */
+            padding: 1.2rem; /* margem interna */
             color: #ffffff; /* cor do texto */
         }
 
@@ -63,37 +63,37 @@
         {
             background-color:#009E9E;
             width: 50%;
-            padding: 10px 20px; /* margem interna */
+            padding: 0.6rem 1.2rem; /* margem interna */
             color: #ffffff; /* cor do texto */
         }
 
         .subscription-title
         {
-            font-size: 20px; /* tamanho da fonte do título da assinatura */
+            font-size: 1.2rem; /* tamanho da fonte do título da assinatura */
             text-align: center; /* centraliza o texto */
-            margin-bottom: 10px; /* margem inferior do título da assinatura */
+            margin-bottom: 1.2rem; /* margem inferior do título da assinatura */
         }
 
         .price
         {
-            font-size: 26px;
+            font-size: 1.6rem;
             font-weight: 700; /* negrito */
         }
 
         .monthly-price
         {
-            font-size: 14px; /* tamanho da fonte do preço mensal */
+            font-size: 0.9rem; /* tamanho da fonte do preço mensal */
             font-style: italic;
-            margin-left: 15px; /* margem esquerda do preço mensal */
+            margin-left: 0.9rem; /* margem esquerda do preço mensal */
         }
 
         .button
         {
             width: 100%;
-            padding: 15px 32px; /* margem interna do botão */
+            padding: 0.9rem 2.0rem; /* margem interna do botão */
             color: #006A6A; /* cor de fundo do botão */
-            font-size: 16px; /* tamanho da fonte do botão */
-            margin-top: 20px; /* margem superior do botão */
+            font-size: 1rem; /* tamanho da fonte do botão */
+            margin-top: 1.2rem; /* margem superior do botão */
             border-radius: 4px; /* borda arredondada do botão */
             border: none; /* remove a borda padrão do botão */
             background-color: #CCCCCC;
@@ -107,7 +107,32 @@
 
         .image-group
         {
-            text-align: center; /* centraliza a imagem */
+            text-align: center;
+        }
+
+        @media screen and (max-width: 620px) /* telas menores que 620px */
+        {
+            html 
+            {
+                font-size: 14px; /* tamanho da fonte para telas menores */
+            }
+
+            .flex-container 
+            {
+                flex-direction: column; /* coluna única em telas menores */
+            }
+
+            .col-1, .col-2 
+            {
+                width: 100%; /* largura total em telas menores */
+                box-sizing: border-box; /* inclui padding e border na largura total */
+            }
+
+            .container 
+            {
+                width: 95%; /* largura do container em telas menores */
+            }
+
         }
 
     </style>
