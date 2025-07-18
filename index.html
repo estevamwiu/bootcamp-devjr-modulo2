@@ -17,7 +17,7 @@
             background-color: #E9E9E9;
             margin: auto; /* centraliza o container e margem externa*/
 
-            width: 600px;
+            width: 600px; /* largura do container */
 
             box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2); /* sombra do container */
             border-radius: 5px; /* borda arredondada */
@@ -26,13 +26,13 @@
 
         .header
         {
-            padding: 40px; /* margem interna */
+            padding: 15px; /* margem interna */
         }
 
         .flex-container
         {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-around; /* espaçamento entre as colunas */
         }
 
         .header-title 
@@ -48,10 +48,10 @@
             color: #009E9E;
             font-size: 18px; /* tamanho da fonte do subtítulo */
             font-weight: 500; /* seminegrito */
-            margin-bottom: 15px; /* margem inferior do subtítulo */
+            margin-bottom: 20px; /* margem inferior do subtítulo */
         }
 
-        .column1
+        .col-1
         {
             background-color: #006A6A;
             width: 50%;
@@ -59,11 +59,11 @@
             color: #ffffff; /* cor do texto */
         }
 
-        .column2
+        .col-2
         {
             background-color:#009E9E;
             width: 50%;
-            padding: 20px; /* margem interna */
+            padding: 10px 20px; /* margem interna */
             color: #ffffff; /* cor do texto */
         }
 
@@ -71,7 +71,7 @@
         {
             font-size: 20px; /* tamanho da fonte do título da assinatura */
             text-align: center; /* centraliza o texto */
-            margin-bottom: 20px; /* margem inferior do título da assinatura */
+            margin-bottom: 10px; /* margem inferior do título da assinatura */
         }
 
         .price
@@ -90,12 +90,10 @@
         .button
         {
             width: 100%;
-            padding: 15px 32px;
-             /* margem interna do botão */
-            color: #006A6A;
-             /* cor de fundo do botão */
+            padding: 15px 32px; /* margem interna do botão */
+            color: #006A6A; /* cor de fundo do botão */
             font-size: 16px; /* tamanho da fonte do botão */
-            margin-top: 20px;
+            margin-top: 20px; /* margem superior do botão */
             border-radius: 4px; /* borda arredondada do botão */
             border: none; /* remove a borda padrão do botão */
             background-color: #CCCCCC;
@@ -107,54 +105,65 @@
             background-color: #E9E9E9; /* cor de fundo do botão ao passar o mouse */
         }
 
+        .image-group
+        {
+            text-align: center; /* centraliza a imagem */
+        }
+
     </style>
 
 </head>
 <body>
 
+</style>
     <div class = "container">
         <div class = "header">
-            <div class = "header-title">
+            <div class ="header-title">
                 Entre para a nossa comunidade!
             </div>
             <div class = "header-subtitle">
                 Faça a sua assinatura agora e ganhe 30% de desconto!
             </div>
-            <div">
-                Faça parte da nossa comunidade de desenvolvedores.
+            <div>
+                Faça parte da nossa comunidade de desenvolvedores.<br>
                 Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
             </div>
-
+        </div>
         <div class = "flex-container">
-            <div class = "column1">
-            <div class = "subscription-title">
-                <p>Assinatura mensal:</p>
-            </div>
+            <div class = "col-1">
+                <div class = "subscription-title">
+                    Assinatura mensal:
+                </div>
 
-            <div>
-                <span class = "price">R$ 99,99</span>
-                <span class = "monthly-price">por mês.</span>
-            </div>
+                <div>
+                    <span class = "price">R$ 99,99</span>
+                    <span class = "month">por mês.</span>
+                </div>
 
-            <div>
-                Cancele a qualquer momento.
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+                <button class = "button">Assinar agora</button>
 
             </div>
-                <button class = "button">Assine agora</button>
-            </div>
-
-        <div class = "column2">
-                <p>Você terá acesso:</p>
+            <div class = "col-2">
+                <div class = "image-group">
+                <object data = "groups_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" type = "image/svg+xml"></object>
+                </div>
+                <div>
+                    Você terá acesso:
+                </div>
                 <ul>
                     <li>Projetos exclusivos</li>
-                    <li>Tutoriais</li>
+                    <li>Tutorias</li>
                     <li>Lives semanais</li>
                     <li>Material didático especializado</li>
                     <li>Fórum</li>
-                    <li>Ofertas de emprego</li>
+                    <li>Ofertas de empregos</li>
                 </ul>
             </div>
         </div>
     </div>
 </body>
+
 </html>
