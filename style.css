@@ -10,7 +10,6 @@
             margin: auto; /* centraliza o container e margem externa*/
 
             width: 600px; /* largura do container */
-
             box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2); /* sombra do container */
             border-radius: 5px; /* borda arredondada */
             overflow: hidden; /* bordas superiores e inferiores arredondadas */
@@ -90,6 +89,7 @@
             border: none; /* remove a borda padrão do botão */
             background-color: #CCCCCC;
             cursor: pointer; /* cursor de ponteiro ao passar o mouse */
+            text-decoration: none; /* remove o sublinhado do link */
         }
 
         .button:hover
@@ -100,6 +100,14 @@
         .image-group
         {
             text-align: center;
+        }
+
+        .image-group object
+        {
+        width: 40px; /* ou 100px, 120px... conforme o tamanho desejado */
+        height: 40px; /* opcional, pode deixar o navegador calcular sozinho */
+        margin: 0 auto;
+        display: block;
         }
 
         @media screen and (max-width: 620px) /* telas menores que 620px */
